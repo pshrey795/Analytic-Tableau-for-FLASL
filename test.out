@@ -1,0 +1,6 @@
+Invalid! 
+A falsifying assignment is as below: 
+
+prop1 : True
+prop2 : False
+prop4 : False

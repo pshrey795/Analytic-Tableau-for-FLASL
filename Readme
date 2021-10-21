@@ -1,0 +1,22 @@
+Shrey J. Patel(2019CS10400) - Analytic Tableau
+
+This submission consists of the following files:
+
+1) flasl2ast.lex => ML-Lex specification for the scanning of tokens
+2) flasl2ast.yacc => ML-Yacc specification for the parsing of tokens
+3) AST.sml => AST specification for the given language i.e. FLASL
+4) flasl2ast.sml => SML file to convert FLASL text to the corresponding Abstract Syntax Tree of Argument type
+5) ast2flasl.sml => SML file which takes an AST of argument type to obtain a FLASL text file
+6) binder.sml => Glue Code to link all the above files
+7) loader.sml => To load all the above files and dependencies
+8) Makefile => To build and run all the required files
+9) proptableau.sml => SML code for checking logical validity usign Analytic Tableau
+
+--How to run the files?
+
+1) All the files can be built by using the Makefile by typing `make all` in the command line. 
+2) This will open the SML interactive environment. 
+3) To run the parser, type in the console `runParser <input_flasl_file>`, and this will return an AST.
+4) To check the logical validity of a given FLASL argument, type `check <input_flasl_file> <output_file>` to generate the result in an output file.
+   If the given argument is valid, then output will show "Valid!" and otherwise, it will print "Invalid!" along with a falsifying assumption. 
+
